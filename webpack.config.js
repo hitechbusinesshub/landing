@@ -20,7 +20,7 @@ module.exports = {
     //mode: 'development',
     mode: 'production',
     output: {
-        path: `${__dirname}/dist`,
+        path: `${__dirname}/docs`,
         //filename: "[name].[chunkHash:8][ext]",
         //filename: "[name].[chunkHash:8][ext]",
         chunkFilename: "[name].[hash:8].[ext]",
