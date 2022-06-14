@@ -8,12 +8,14 @@ html(xmlns='http://www.w3.org/1999/html', lang='en')
     title Hi-Tech Business hub - Grow up your business in Georgia
   body
     section.hero.is-link.is-small.is-fullheight-with-navbar.pb-2
-      .hero-head
+      .hero-head.is-hidden-touch
         nav.navbar
-          .container.is-hidden-touch
+          .container
             .navbar-brand
               a.navbar-item
                 img(width='115', src=require("./img/logo.svg"))
+            .navbar-end
+              a.navbar-item(href='https://www.linkedin.com/company/hi-tech-business-hub')
             .navbar-end
               a.navbar-item(href='https://www.linkedin.com/company/hi-tech-business-hub', target='_blank')
                 span.icon
@@ -34,22 +36,21 @@ html(xmlns='http://www.w3.org/1999/html', lang='en')
                   span.icon
                     i.fa-regular.fa-handshake
                   span Became as partner
-          .container.is-hidden-desktop.has-text-centered
-            a.navbar-item
-              img(width='115', src=require("./img/logo.svg"))
-            .navbar-end
-              a(href='https://www.linkedin.com/company/hi-tech-business-hub', target='_blank')
-                span.icon
-                  i.fab.fa-linkedin
-              a(href='https://github.com/hitechbusinesshub', target='_blank')
-                span.icon
-                  i.fab.fa-github
-              a(href='https://t.me/+NbqPJ1erXz0zMGIy', target='_blank')
-                span.icon
-                  i.fab.fa-telegram
       .hero-body.is-block
-        .container.content.mb-6.has-text-centered
-          img(style='width: 350px;', src=require("./img/logo.svg")).is-inline-block.is-hidden-touch
+        .container.content.mb-6.has-text-centered.is-hidden-touch
+          img(style='width: 350px;', src=require("./img/logo.svg")).is-inline-block
+        .container.has-text-centered.is-hidden-desktop.m-4
+          img(style='width: 200px;', src=require("./img/logo.svg")).is-inline-block
+          .container.content
+            a(href='https://www.linkedin.com/company/hi-tech-business-hub', target='_blank')
+              span.icon.is-large
+                i.fab.fa-linkedin.fa-lg
+            a(href='https://github.com/hitechbusinesshub', target='_blank')
+              span.icon.is-large
+                i.fab.fa-github.fa-lg
+            a(href='https://t.me/+NbqPJ1erXz0zMGIy', target='_blank')
+              span.icon.is-large
+                i.fab.fa-telegram.fa-lg
         .container.has-text-centered
           p.title.content
             | We are Hi-Tech Business hub in Georgia
@@ -59,7 +60,41 @@ html(xmlns='http://www.w3.org/1999/html', lang='en')
           br
           br
           br
-          br
+
+          p.title.content
+            | Our projects
+          .container
+            .content
+              .columns.has-text-centered
+                .column.content
+                  a.has-text-centered(href='https://t.me/+L3csJ_oxdkplYTEy', target='_blank')
+                    figure.image.is-128x128
+                      img(src=require("./img/ip_chat.jpeg?sizes[]=500&quality=100").src).is-rounded.white-border
+                      span.is-bold Business chat
+                .column.content
+                  a.has-text-centered(href='https://t.me/ipgeorgia', target='_blank')
+                    figure.image.is-128x128
+                      img(src=require("./img/ip_channel.jpeg?sizes[]=500&quality=100").src).is-rounded.white-border
+                      span.is-bold Business channel
+                .column.content
+                  a.has-text-centered(href='t.me/itgeorgia', target='_blank')
+                    figure.image.is-128x128
+                      img(src=require("./img/it_chat.jpeg?sizes[]=500&quality=100").src).is-rounded.white-border
+                      span.is-bold IT chat
+                .column.content
+                  a.has-text-centered(href='https://t.me/+NbqPJ1erXz0zMGIy', target='_blank')
+                    figure.image.is-128x128
+                      img(src=require("./img/hub_channel.jpeg?sizes[]=500&quality=100").src).is-rounded.white-border
+                      span.is-bold Hub channel
+                .column.content
+                  a.has-text-centered(href='https://t.me/cvjobge', target='_blank')
+                    figure.image.is-128x128
+                      img(src=require("./img/job_channel.jpeg?sizes[]=500&quality=100").src).is-rounded.white-border
+                      span.is-bold Job channel
+
+    section.hero.is-white.is-small.pb-2
+      .hero-body
+        .container
           p.title.content
             | What we do
           .container
@@ -67,14 +102,14 @@ html(xmlns='http://www.w3.org/1999/html', lang='en')
               .columns
                 .column.is-half
                   a.bd-link
-                    span.icon.bd-link-icon
+                    span.icon.bd-link-icon.is-large
                       i.title.fa-regular.fa-paper-plane
                     .bd-link-body
                       .bd-link-subtitle
                         | Supporting Ecosystem participants, with Legal, Administrative, project management and other services.
                 .column.is-half
                   a.bd-link
-                    span.icon.bd-link-icon
+                    span.icon.bd-link-icon.is-large
                       i.title.fa-regular.fa-paper-plane
                     .bd-link-body
                       .bd-link-subtitle
@@ -83,14 +118,14 @@ html(xmlns='http://www.w3.org/1999/html', lang='en')
               .columns
                 .column.is-half
                   a.bd-link
-                    span.icon.bd-link-icon
+                    span.icon.bd-link-icon.is-large
                       i.title.fa-regular.fa-handshake
                     .bd-link-body
                       .bd-link-subtitle
                         | Serving as a Human resource Hub, IT Headhunting, also DevRel think tank for Ecosystem participants as well as for Georgian Businesses who would like to have a Quality Human resources in IT, hardware and Software
                 .column.is-half
                   a.bd-link
-                    span.icon.bd-link-icon
+                    span.icon.bd-link-icon.is-large
                       i.title.fa-regular.fa-user
                     .bd-link-body
                       .bd-link-subtitle
@@ -112,17 +147,10 @@ html(xmlns='http://www.w3.org/1999/html', lang='en')
               span.icon
                 i.fa-regular.fa-user
               span Join the team
-      .hero-foot
-        //#typo.bd-docs-typo.has-text-centered
-        //  a.has-text-grey(href='https://t.me/+L3csJ_oxdkplYTEy')
-        //    | Also join our largest business community in telegram
-          //p.has-text-grey-light
-            //| Also join our largest business community in telegram
-            //br
-            //a.has-text-grey(href='https://t.me/+L3csJ_oxdkplYTEy')
-            //  | Also join our largest business community in telegram
-          nav.tabs
-            .container
-              ul
-                li
-                  | N(N)LE Hi-Tech Business Hub ID: 402214590
+
+
+      div.footer.has-text-centered.has-text-grey.is-small
+        span.p-1
+          | N(N)LE Hi-Tech Business Hub ID: 402214590
+        a(href='/privacy.html', target='_blank').p-1
+          span Privacy policy
