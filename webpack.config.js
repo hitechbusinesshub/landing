@@ -83,7 +83,8 @@ module.exports = {
     },
     plugins: [
         new CleanWebpackPlugin(),
-        new HtmlWebpackPlugin({template: './src/index.pug'}),
+        new HtmlWebpackPlugin({template: './src/index.pug', filename: "index.html"}),
+        new HtmlWebpackPlugin({template: './src/privacy.pug', filename: "privacy.html"}),
         new RemoveEmptyScriptsPlugin(),
         new MiniCssExtractPlugin({
             filename: '[name].[chunkhash:8].css',

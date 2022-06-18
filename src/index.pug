@@ -63,30 +63,35 @@ html(xmlns='http://www.w3.org/1999/html', lang='en')
 
           p.title.content
             | Our projects
-          .container
+          .container.is-centered.is-flex.is-justify-content-center
             .content
-              .columns.has-text-centered
-                .column.content
+              .columns.has-text-centered.is-multiline.is-centered
+                .column.content.is-one-quarter
                   a.has-text-centered(href='https://t.me/+L3csJ_oxdkplYTEy', target='_blank')
                     figure.image.is-128x128
                       img(src=require("./img/ip_chat.jpeg?sizes[]=500&quality=100").src).is-rounded.white-border
                       span.is-bold Business chat
-                .column.content
+                .column.content.is-one-quarter
                   a.has-text-centered(href='https://t.me/ipgeorgia', target='_blank')
                     figure.image.is-128x128
                       img(src=require("./img/ip_channel.jpeg?sizes[]=500&quality=100").src).is-rounded.white-border
                       span.is-bold Business channel
-                .column.content
+                .column.content.is-one-quarter
                   a.has-text-centered(href='https://t.me/itgeorgia', target='_blank')
                     figure.image.is-128x128
                       img(src=require("./img/it_chat.jpeg?sizes[]=500&quality=100").src).is-rounded.white-border
                       span.is-bold IT chat
-                .column.content
-                  a.has-text-centered(href='https://t.me/+NbqPJ1erXz0zMGIy', target='_blank')
+                .column.content.is-one-quarter
+                  a.has-text-centered(href='https://t.me/c/1635842111/74', target='_blank')
                     figure.image.is-128x128
                       img(src=require("./img/hub_channel.jpeg?sizes[]=500&quality=100").src).is-rounded.white-border
-                      span.is-bold Hub channel
-                .column.content
+                      span.is-bold Turnkey relocation
+                .column.content.is-one-quarter
+                  a.has-text-centered(href='https://novator-house.com/networking', target='_blank')
+                    figure.image.is-128x128
+                      img(src=require("./img/novator.png?sizes[]=500&quality=100").src).is-rounded.white-border
+                      span.is-bold Networking
+                .column.content.is-one-quarter
                   a.has-text-centered(href='https://t.me/cvjobge', target='_blank')
                     figure.image.is-128x128
                       img(src=require("./img/job_channel.jpeg?sizes[]=500&quality=100").src).is-rounded.white-border
@@ -148,9 +153,8 @@ html(xmlns='http://www.w3.org/1999/html', lang='en')
                 i.fa-regular.fa-user
               span Join the team
 
-
       div.footer.has-text-centered.has-text-grey.is-small
         span.p-1
           | N(N)LE Hi-Tech Business Hub ID: 402214590
-        a(href='/privacy.html', target='_blank').p-1
-          //span Privacy policy
+        a(href='./privacy.html', target='_blank').p-1
+          span Privacy policy
