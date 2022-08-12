@@ -23,7 +23,7 @@ module.exports = {
         path: `${__dirname}/docs`,
         //filename: "[name].[chunkHash:8][ext]",
         //filename: "[name].[chunkHash:8][ext]",
-        chunkFilename: "[name].[hash:8].[ext]",
+        chunkFilename: "[hash:8].[ext]",
     },
     module: {
         rules: [
@@ -39,14 +39,14 @@ module.exports = {
                 test: /\.(ttf|eot|woff|woff2)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
                 type: "asset",
                 generator: {
-                    filename: 'fonts/[name][ext]'
+                    filename: 'fonts/[hash][ext]'
                 }
             },
             {
                 test: /\.(svg)?$/,
                 type: "asset/resource",
                 generator: {
-                    filename: 'img/[name][ext]'
+                    filename: 'img/[hash][ext]'
                 }
             },
             {
@@ -56,7 +56,7 @@ module.exports = {
                     options: {
                         adapter: require('responsive-loader/sharp'),
                         outputPath: 'img/',
-                        name: '[name]_[width].[ext]',
+                        name: '[hash].[ext]',
                     },
                 },
             },
