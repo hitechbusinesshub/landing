@@ -16,8 +16,12 @@ html(xmlns='http://www.w3.org/1999/html', lang='en')
               a.navbar-item
                 img(width='115', src=require("./img/logo.svg"))
             .navbar-end
-              a.navbar-item(href='https://www.linkedin.com/company/hi-tech-business-hub')
-            .navbar-end
+              a.navbar-item(href='https://www.instagram.com/hitechbusinesshub', target='_blank')
+                span.icon
+                  i.fab.fa-instagram
+              a.navbar-item(href='https://www.facebook.com/Hi-Tech-Business-Hub-105515512209960', target='_blank')
+                span.icon
+                  i.fab.fa-facebook
               a.navbar-item(href='https://www.linkedin.com/company/hi-tech-business-hub', target='_blank')
                 span.icon
                   i.fab.fa-linkedin
@@ -43,6 +47,12 @@ html(xmlns='http://www.w3.org/1999/html', lang='en')
         .container.has-text-centered.is-hidden-desktop.m-4
           img(style='width: 200px;', src=require("./img/logo.svg")).is-inline-block
           .container.content
+            a(href='https://www.instagram.com/hitechbusinesshub', target='_blank')
+              span.icon.is-large
+                i.fab.fa-instagram.fa-lg
+            a(href='https://www.facebook.com/Hi-Tech-Business-Hub-105515512209960', target='_blank')
+              span.icon.is-large
+                i.fab.fa-facebook.fa-lg
             a(href='https://www.linkedin.com/company/hi-tech-business-hub', target='_blank')
               span.icon.is-large
                 i.fab.fa-linkedin.fa-lg
@@ -66,47 +76,67 @@ html(xmlns='http://www.w3.org/1999/html', lang='en')
             | Our projects
           .container.is-centered.is-flex.is-justify-content-center
             .content
-              .columns.has-text-centered.is-multiline.is-centered
-                .column.content.is-one-quarter
+              .columns.has-text-centered.is-multiline.is-flex.is-justify-content-center
+                .column.is-one-quarter
                   a.has-text-centered(href='https://t.me/+L3csJ_oxdkplYTEy', target='_blank')
-                    figure.image.is-128x128
+                    figure.image.is-128x128.is-inline-block
                       img(src=require("./img/ip_chat.jpeg?sizes[]=500&quality=100").src).is-rounded.white-border
-                      span.is-bold Business chat
-                .column.content.is-one-quarter
+                    div
+                      a  Business chat
+                .column.is-one-quarter
                   a.has-text-centered(href='https://t.me/ipgeorgia', target='_blank')
-                    figure.image.is-128x128
+                    figure.image.is-128x128.is-inline-block
                       img(src=require("./img/ip_channel.jpeg?sizes[]=500&quality=100").src).is-rounded.white-border
-                      span.is-bold Business channel
-                .column.content.is-one-quarter
+                    div
+                      a Business channel
+                .column.is-3.is-one-quarter
                   a.has-text-centered(href='https://t.me/itgeorgia', target='_blank')
-                    figure.image.is-128x128
+                    figure.image.is-128x128.is-inline-block
                       img(src=require("./img/it_chat.jpeg?sizes[]=500&quality=100").src).is-rounded.white-border
-                      span.is-bold IT chat
-                .column.content.is-one-quarter
-                  a.has-text-centered(href='https://t.me/c/1635842111/74', target='_blank')
-                    figure.image.is-128x128
+                    div
+                      a IT chat
+                .column.is-3.is-one-quarter
+                  a.has-text-centered(href='https://ipgeorgia.ge/relocation', target='_blank')
+                    figure.image.is-128x128.is-inline-block
                       img(src=require("./img/hub_channel.jpeg?sizes[]=500&quality=100").src).is-rounded.white-border
-                      span.is-bold.nowrap Turnkey relocation
-                .column.content.is-one-quarter
-                  a.has-text-centered(href='https://novator-house.com/networking', target='_blank')
-                    figure.image.is-128x128
+                    div
+                      a Turnkey relocation
+                .column.is-3.is-one-quarter
+                  a.has-text-centered(href='https://t.me/tbilisinovator1', target='_blank')
+                    figure.image.is-128x128.is-inline-block
                       img(src=require("./img/novator.png?sizes[]=500&quality=100").src).is-rounded.white-border
-                      span.is-bold Networking
-                .column.content.is-one-quarter
+                    div
+                      a Networking
+                .column.is-3.is-one-quarter
                   a.has-text-centered(href='https://t.me/cvjobge', target='_blank')
-                    figure.image.is-128x128
+                    figure.image.is-128x128.is-inline-block
                       img(src=require("./img/job_channel.jpeg?sizes[]=500&quality=100").src).is-rounded.white-border
-                      span.is-bold Job channel
-                .column.content.is-one-quarter
+                    div
+                      a Job channel
+                .column.is-3.is-one-quarter
                   a.has-text-centered(href='https://gervice.ge', target='_blank')
-                    figure.image.is-128x128
+                    figure.image.is-128x128.is-inline-block
                       img(src=require("./img/gervice.jpg?sizes[]=500&quality=100").src).is-rounded.white-border
-                      span.is-bold Gervice
-                .column.content.is-one-quarter
+                    div
+                      a Gervice (Организация комфортной жизни в Грузии)
+                .column.is-3.is-one-quarter
                   a.has-text-centered(href='https://t.me/ravestagbot?start=5364782509', target='_blank')
-                    figure.image.is-128x128
+                    figure.image.is-128x128.is-inline-block
                       img(src=require("./img/ravestag.jpg?sizes[]=500&quality=100").src).is-rounded.white-border
-                      span.is-bold.nowrap.ravestag Ravestag Online crypto exchange
+                    div
+                      a Ravestag Online crypto exchange
+                .column.is-3.is-one-quarter
+                  a.has-text-centered(href='https://neurovision.tech', target='_blank')
+                    figure.image.is-128x128.is-inline-block
+                      img(src=require("./img/neurovision.png?sizes[]=500&quality=100").src).is-rounded.white-border
+                    div
+                      a Умное видеонаблюдение с применением нейросетей
+                .column.is-3.is-one-quarter
+                  a.has-text-centered(href='https://ipgeorgia.ge/bsreg', target='_blank')
+                    figure.image.is-128x128.is-inline-block
+                      img(src=require("./img/register_business.jpeg?sizes[]=500&quality=100").src).is-rounded.white-border
+                    div
+                      a Регистрация бизнеса/ИП/ Юридические услуги/Бухгалтерия/Делопроизводство/ВНЖ
 
     section.hero.is-white.is-small.pb-2
       .hero-body
